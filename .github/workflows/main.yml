@@ -14,4 +14,4 @@ jobs:
         - name: Call Greeter Action
           uses: vMarioDev/azure_aviatrix_spoke_deployment_second_pipeline@main  # useername/repository@branch
           with: 
-            name_to_greet: everyone # input name defined in action.yml
+            name_to_greet: everyone # input name defined in action.yml  
