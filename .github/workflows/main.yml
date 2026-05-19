@@ -12,6 +12,13 @@ jobs:
           uses: actions/checkout@v4
 
         - name: Call Greeter Action
-          uses: vMarioDev/azure_aviatrix_spoke_deployment_second_pipeline@main  # useername/repository@branch
+          uses: vMarioDev/azure_aviatrix_spoke_deployment_second_pipeline/actions/greeter@main  # useername/repository@branch
           with: 
-            name_to_greet: everyone # input name defined in action.yml  
+            name_to_greet: everyone # input name defined in action.yml
+        
+        - name:  Call Check Breakout Action
+          uses: vMarioDev/azure_aviatrix_spoke_deployment_second_pipeline/actions/check_breakout@main  # useername/repository@branch
+          
+         
+
+        
