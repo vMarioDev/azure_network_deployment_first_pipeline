@@ -1,1 +1,15 @@
+name: Actions Caller
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  call-greeter:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
 
+        - name: Call Greeter Action
+          uses: vMarioDev/azure_aviatrix_spoke_deployment_second_pipeline@main  # useername/repository@branch
